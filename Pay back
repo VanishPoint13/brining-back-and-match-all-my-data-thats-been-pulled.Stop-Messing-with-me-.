@@ -1,0 +1,324 @@
+--------- beginning of crash
+10-25 14:31:00.579 F/libc    (26374): Fatal signal 31 (SIGSYS), code 1 (SYS_SECCOMP) in tid 26374 (dmesg), pid 26374 (dmesg)
+10-25 14:31:00.709 F/DEBUG   (26384): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-25 14:31:00.709 F/DEBUG   (26384): Build fingerprint: 'samsung/a03sutfn/a03su:12/SP1A.210812.016/S134DLUDU3BVH3:user/release-keys'
+10-25 14:31:00.709 F/DEBUG   (26384): Revision: '0'
+10-25 14:31:00.709 F/DEBUG   (26384): ABI: 'arm64'
+10-25 14:31:00.709 F/DEBUG   (26384): Processor: '0'
+10-25 14:31:00.709 F/DEBUG   (26384): Timestamp: 2022-10-25 14:31:00.674480962-0400
+10-25 14:31:00.709 F/DEBUG   (26384): Process uptime: 1s
+10-25 14:31:00.709 F/DEBUG   (26384): Cmdline: dmesg
+10-25 14:31:00.709 F/DEBUG   (26384): pid: 26374, tid: 26374, name: dmesg  >>> dmesg <<<
+10-25 14:31:00.709 F/DEBUG   (26384): uid: 10253
+10-25 14:31:00.709 F/DEBUG   (26384): signal 31 (SIGSYS), code 1 (SYS_SECCOMP), fault addr --------
+10-25 14:31:00.709 F/DEBUG   (26384): Cause: seccomp prevented call to disallowed arm64 system call 116
+10-25 14:31:00.709 F/DEBUG   (26384):     x0  <private info omitted>a  x1  <private info omitted>0  x2  <private info omitted>0  x3  <private info omitted>0
+10-25 14:31:00.710 F/DEBUG   (26384):     x4  0000007fe69ae521  x5  <private info omitted>4  x6  <private info omitted>0  x7  ff372c455354fefe
+10-25 14:31:00.710 F/DEBUG   (26384):     x8  <private info omitted>4  x9  0b1c8582dfa2e328  x10 0000007fe69ac480  x11 0000007fe69ac450
+10-25 14:31:00.710 F/DEBUG   (26384):     x12 ffffff80ffffffd0  x13 b400007ba620b010  x14 <private info omitted>0  x15 <private info omitted>0
+10-25 14:31:00.710 F/DEBUG   (26384):     x16 000000644ba26d20  x17 0000007ba69ab8f0  x18 0000007ba8796000  x19 <private info omitted>0
+10-25 14:31:00.710 F/DEBUG   (26384):     x20 <private info omitted>0  x21 0000007fe69ac520  x22 0000007ba7ed0000  x23 000000644ba2c990
+10-25 14:31:00.710 F/DEBUG   (26384):     x24 000000644ba2a968  x25 <private info omitted>0  x26 <private info omitted>0  x27 <private info omitted>0
+10-25 14:31:00.710 F/DEBUG   (26384):     x28 <private info omitted>0  x29 0000007fe69ae530
+10-25 14:31:00.710 F/DEBUG   (26384):     lr  000000644ba049c0  sp  0000007fe69ac520  pc  0000007ba69ab8f8  pst <private info omitted>0
+10-25 14:31:00.710 F/DEBUG   (26384): backtrace:
+10-25 14:31:00.710 F/DEBUG   (26384):       #00 pc 00000000000d98f8  /apex/com.android.runtime/lib64/bionic/libc.so (klogctl+8) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+10-25 14:31:00.710 F/DEBUG   (26384):       #01 pc 00000000000519bc  /system/bin/toybox (dmesg_main+440) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:00.710 F/DEBUG   (26384):       #02 pc <private info omitted>0  /system/bin/toybox (toy_exec_which+80) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:00.710 F/DEBUG   (26384):       #03 pc 0000000000033cb4  /system/bin/toybox (toybox_main+144) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:00.710 F/DEBUG   (26384):       #04 pc <private info omitted>8  /system/bin/toybox (main+112) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:00.710 F/DEBUG   (26384):       #05 pc <private info omitted>8  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+96) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+10-25 14:31:17.196 F/libc    (26745): Fatal signal 31 (SIGSYS), code 1 (SYS_SECCOMP) in tid 26745 (dmesg), pid 26745 (dmesg)
+10-25 14:31:17.244 F/DEBUG   (26749): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-25 14:31:17.244 F/DEBUG   (26749): Build fingerprint: 'samsung/a03sutfn/a03su:12/SP1A.210812.016/S134DLUDU3BVH3:user/release-keys'
+10-25 14:31:17.244 F/DEBUG   (26749): Revision: '0'
+10-25 14:31:17.244 F/DEBUG   (26749): ABI: 'arm64'
+10-25 14:31:17.244 F/DEBUG   (26749): Processor: '2'
+10-25 14:31:17.244 F/DEBUG   (26749): Timestamp: 2022-10-25 14:31:17.231515117-0400
+10-25 14:31:17.244 F/DEBUG   (26749): Process uptime: 1s
+10-25 14:31:17.244 F/DEBUG   (26749): Cmdline: dmesg
+10-25 14:31:17.244 F/DEBUG   (26749): pid: 26745, tid: 26745, name: dmesg  >>> dmesg <<<
+10-25 14:31:17.244 F/DEBUG   (26749): uid: 10253
+10-25 14:31:17.244 F/DEBUG   (26749): signal 31 (SIGSYS), code 1 (SYS_SECCOMP), fault addr --------
+10-25 14:31:17.244 F/DEBUG   (26749): Cause: seccomp prevented call to disallowed arm64 system call 116
+10-25 14:31:17.244 F/DEBUG   (26749):     x0  <private info omitted>a  x1  <private info omitted>0  x2  <private info omitted>0  x3  <private info omitted>0
+10-25 14:31:17.244 F/DEBUG   (26749):     x4  0000007ffd4e19d1  x5  <private info omitted>4  x6  <private info omitted>0  x7  ff372c455354fefe
+10-25 14:31:17.244 F/DEBUG   (26749):     x8  <private info omitted>4  x9  1ee73476a9c612b6  x10 0000007ffd4df930  x11 0000007ffd4df900
+10-25 14:31:17.245 F/DEBUG   (26749):     x12 ffffff80ffffffd0  x13 b40000778680b010  x14 <private info omitted>0  x15 <private info omitted>0
+10-25 14:31:17.245 F/DEBUG   (26749):     x16 000000620a012d20  x17 0000007786d2b8f0  x18 000000778a6f0000  x19 <private info omitted>0
+10-25 14:31:17.245 F/DEBUG   (26749):     x20 <private info omitted>0  x21 0000007ffd4df9d0  x22 000000778a3e7000  x23 000000620a018990
+10-25 14:31:17.245 F/DEBUG   (26749):     x24 000000620a016968  x25 <private info omitted>0  x26 <private info omitted>0  x27 <private info omitted>0
+10-25 14:31:17.245 F/DEBUG   (26749):     x28 <private info omitted>0  x29 0000007ffd4e19e0
+10-25 14:31:17.245 F/DEBUG   (26749):     lr  0000006209ff09c0  sp  0000007ffd4df9d0  pc  0000007786d2b8f8  pst <private info omitted>0
+10-25 14:31:17.245 F/DEBUG   (26749): backtrace:
+10-25 14:31:17.245 F/DEBUG   (26749):       #00 pc 00000000000d98f8  /apex/com.android.runtime/lib64/bionic/libc.so (klogctl+8) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+10-25 14:31:17.245 F/DEBUG   (26749):       #01 pc 00000000000519bc  /system/bin/toybox (dmesg_main+440) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:17.245 F/DEBUG   (26749):       #02 pc <private info omitted>0  /system/bin/toybox (toy_exec_which+80) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:17.245 F/DEBUG   (26749):       #03 pc 0000000000033cb4  /system/bin/toybox (toybox_main+144) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:17.245 F/DEBUG   (26749):       #04 pc <private info omitted>8  /system/bin/toybox (main+112) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:17.245 F/DEBUG   (26749):       #05 pc <private info omitted>8  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+96) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+10-25 14:31:51.700 F/libc    (27013): Fatal signal 31 (SIGSYS), code 1 (SYS_SECCOMP) in tid 27013 (dmesg), pid 27013 (dmesg)
+10-25 14:31:51.741 F/DEBUG   (27016): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-25 14:31:51.741 F/DEBUG   (27016): Build fingerprint: 'samsung/a03sutfn/a03su:12/SP1A.210812.016/S134DLUDU3BVH3:user/release-keys'
+10-25 14:31:51.741 F/DEBUG   (27016): Revision: '0'
+10-25 14:31:51.741 F/DEBUG   (27016): ABI: 'arm64'
+10-25 14:31:51.741 F/DEBUG   (27016): Processor: '0'
+10-25 14:31:51.741 F/DEBUG   (27016): Timestamp: 2022-10-25 14:31:51.725829350-0400
+10-25 14:31:51.741 F/DEBUG   (27016): Process uptime: 1s
+10-25 14:31:51.741 F/DEBUG   (27016): Cmdline: dmesg
+10-25 14:31:51.741 F/DEBUG   (27016): pid: 27013, tid: 27013, name: dmesg  >>> dmesg <<<
+10-25 14:31:51.742 F/DEBUG   (27016): uid: 10253
+10-25 14:31:51.742 F/DEBUG   (27016): signal 31 (SIGSYS), code 1 (SYS_SECCOMP), fault addr --------
+10-25 14:31:51.742 F/DEBUG   (27016): Cause: seccomp prevented call to disallowed arm64 system call 116
+10-25 14:31:51.742 F/DEBUG   (27016):     x0  <private info omitted>a  x1  <private info omitted>0  x2  <private info omitted>0  x3  <private info omitted>0
+10-25 14:31:51.742 F/DEBUG   (27016):     x4  0000007fc2e0a3b1  x5  <private info omitted>4  x6  <private info omitted>0  x7  ff372c455354fefe
+10-25 14:31:51.742 F/DEBUG   (27016):     x8  <private info omitted>4  x9  f3156ab049a3f4a7  x10 0000007fc2e08310  x11 0000007fc2e082e0
+10-25 14:31:51.742 F/DEBUG   (27016):     x12 ffffff80ffffffd0  x13 b40000704880b010  x14 <private info omitted>0  x15 <private info omitted>0
+10-25 14:31:51.742 F/DEBUG   (27016):     x16 000000610d221d20  x17 0000007048f128f0  x18 000000704e09e000  x19 <private info omitted>0
+10-25 14:31:51.742 F/DEBUG   (27016):     x20 <private info omitted>0  x21 0000007fc2e083b0  x22 000000704d026000  x23 000000610d227990
+10-25 14:31:51.742 F/DEBUG   (27016):     x24 000000610d225968  x25 <private info omitted>0  x26 <private info omitted>0  x27 <private info omitted>0
+10-25 14:31:51.742 F/DEBUG   (27016):     x28 <private info omitted>0  x29 0000007fc2e0a3c0
+10-25 14:31:51.742 F/DEBUG   (27016):     lr  000000610d1ff9c0  sp  0000007fc2e083b0  pc  0000007048f128f8  pst <private info omitted>0
+10-25 14:31:51.742 F/DEBUG   (27016): backtrace:
+10-25 14:31:51.742 F/DEBUG   (27016):       #00 pc 00000000000d98f8  /apex/com.android.runtime/lib64/bionic/libc.so (klogctl+8) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+10-25 14:31:51.742 F/DEBUG   (27016):       #01 pc 00000000000519bc  /system/bin/toybox (dmesg_main+440) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:51.742 F/DEBUG   (27016):       #02 pc <private info omitted>0  /system/bin/toybox (toy_exec_which+80) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:51.742 F/DEBUG   (27016):       #03 pc 0000000000033cb4  /system/bin/toybox (toybox_main+144) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:51.742 F/DEBUG   (27016):       #04 pc <private info omitted>8  /system/bin/toybox (main+112) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-25 14:31:51.742 F/DEBUG   (27016):       #05 pc <private info omitted>8  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+96) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+10-26 15:37:01.877 F/libc    ( 7316): Fatal signal 31 (SIGSYS), code 1 (SYS_SECCOMP) in tid 7316 (dmesg), pid 7316 (dmesg)
+10-26 15:37:01.971 F/DEBUG   ( 7320): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-26 15:37:01.971 F/DEBUG   ( 7320): Build fingerprint: 'samsung/a03sutfn/a03su:12/SP1A.210812.016/S134DLUDU3BVH3:user/release-keys'
+10-26 15:37:01.971 F/DEBUG   ( 7320): Revision: '0'
+10-26 15:37:01.971 F/DEBUG   ( 7320): ABI: 'arm64'
+10-26 15:37:01.971 F/DEBUG   ( 7320): Processor: '1'
+10-26 15:37:01.971 F/DEBUG   ( 7320): Timestamp: 2022-10-26 15:37:01.937319789-0400
+10-26 15:37:01.971 F/DEBUG   ( 7320): Process uptime: 2s
+10-26 15:37:01.971 F/DEBUG   ( 7320): Cmdline: dmesg
+10-26 15:37:01.971 F/DEBUG   ( 7320): pid: 7316, tid: 7316, name: dmesg  >>> dmesg <<<
+10-26 15:37:01.971 F/DEBUG   ( 7320): uid: 10253
+10-26 15:37:01.971 F/DEBUG   ( 7320): signal 31 (SIGSYS), code 1 (SYS_SECCOMP), fault addr --------
+10-26 15:37:01.971 F/DEBUG   ( 7320): Cause: seccomp prevented call to disallowed arm64 system call 116
+10-26 15:37:01.971 F/DEBUG   ( 7320):     x0  <private info omitted>a  x1  <private info omitted>0  x2  <private info omitted>0  x3  <private info omitted>0
+10-26 15:37:01.971 F/DEBUG   ( 7320):     x4  0000007ff8a81fc1  x5  <private info omitted>4  x6  <private info omitted>0  x7  ff372c455354fefe
+10-26 15:37:01.972 F/DEBUG   ( 7320):     x8  <private info omitted>4  x9  9ff8edf9e2bd3510  x10 0000007ff8a7ff20  x11 0000007ff8a7fef0
+10-26 15:37:01.972 F/DEBUG   ( 7320):     x12 ffffff80ffffffd0  x13 b4000072de20b010  x14 <private info omitted>0  x15 <private info omitted>0
+10-26 15:37:01.972 F/DEBUG   ( 7320):     x16 0000005886e44d20  x17 00000072e01b98f0  x18 00000072e3d48000  x19 <private info omitted>0
+10-26 15:37:01.972 F/DEBUG   ( 7320):     x20 <private info omitted>0  x21 0000007ff8a7ffc0  x22 00000072e2f95000  x23 0000005886e4a990
+10-26 15:37:01.972 F/DEBUG   ( 7320):     x24 0000005886e48968  x25 <private info omitted>0  x26 <private info omitted>0  x27 <private info omitted>0
+10-26 15:37:01.972 F/DEBUG   ( 7320):     x28 <private info omitted>0  x29 0000007ff8a81fd0
+10-26 15:37:01.972 F/DEBUG   ( 7320):     lr  0000005886e229c0  sp  0000007ff8a7ffc0  pc  00000072e01b98f8  pst <private info omitted>0
+10-26 15:37:01.972 F/DEBUG   ( 7320): backtrace:
+10-26 15:37:01.972 F/DEBUG   ( 7320):       #00 pc 00000000000d98f8  /apex/com.android.runtime/lib64/bionic/libc.so (klogctl+8) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+10-26 15:37:01.972 F/DEBUG   ( 7320):       #01 pc 00000000000519bc  /system/bin/toybox (dmesg_main+440) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-26 15:37:01.972 F/DEBUG   ( 7320):       #02 pc <private info omitted>0  /system/bin/toybox (toy_exec_which+80) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-26 15:37:01.972 F/DEBUG   ( 7320):       #03 pc 0000000000033cb4  /system/bin/toybox (toybox_main+144) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-26 15:37:01.972 F/DEBUG   ( 7320):       #04 pc <private info omitted>8  /system/bin/toybox (main+112) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-26 15:37:01.972 F/DEBUG   ( 7320):       #05 pc <private info omitted>8  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+96) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+10-27 00:10:16.190 F/libc    (30383): Fatal signal 31 (SIGSYS), code 1 (SYS_SECCOMP) in tid 30383 (dmesg), pid 30383 (dmesg)
+10-27 00:10:16.282 F/DEBUG   (30387): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-27 00:10:16.283 F/DEBUG   (30387): Build fingerprint: 'samsung/a03sutfn/a03su:12/SP1A.210812.016/S134DLUDU3BVH3:user/release-keys'
+10-27 00:10:16.283 F/DEBUG   (30387): Revision: '0'
+10-27 00:10:16.283 F/DEBUG   (30387): ABI: 'arm64'
+10-27 00:10:16.283 F/DEBUG   (30387): Processor: '1'
+10-27 00:10:16.283 F/DEBUG   (30387): Timestamp: 2022-10-27 00:10:16.247102182-0400
+10-27 00:10:16.283 F/DEBUG   (30387): Process uptime: 1s
+10-27 00:10:16.283 F/DEBUG   (30387): Cmdline: dmesg
+10-27 00:10:16.283 F/DEBUG   (30387): pid: 30383, tid: 30383, name: dmesg  >>> dmesg <<<
+10-27 00:10:16.283 F/DEBUG   (30387): uid: 10253
+10-27 00:10:16.283 F/DEBUG   (30387): signal 31 (SIGSYS), code 1 (SYS_SECCOMP), fault addr --------
+10-27 00:10:16.283 F/DEBUG   (30387): Cause: seccomp prevented call to disallowed arm64 system call 116
+10-27 00:10:16.283 F/DEBUG   (30387):     x0  <private info omitted>a  x1  <private info omitted>0  x2  <private info omitted>0  x3  <private info omitted>0
+10-27 00:10:16.283 F/DEBUG   (30387):     x4  0000007ff32ff461  x5  <private info omitted>4  x6  <private info omitted>0  x7  ff372c455354fefe
+10-27 00:10:16.283 F/DEBUG   (30387):     x8  <private info omitted>4  x9  2ed384441acc7af0  x10 0000007ff32fd3c0  x11 0000007ff32fd390
+10-27 00:10:16.283 F/DEBUG   (30387):     x12 ffffff80ffffffd0  x13 b4000072ed20b010  x14 <private info omitted>0  x15 <private info omitted>0
+10-27 00:10:16.283 F/DEBUG   (30387):     x16 000000617097ad20  x17 00000072edf8e8f0  x18 00000072f2ee0000  x19 <private info omitted>0
+10-27 00:10:16.283 F/DEBUG   (30387):     x20 <private info omitted>0  x21 0000007ff32fd460  x22 00000072f26fa000  x23 <private info omitted>0
+10-27 00:10:16.283 F/DEBUG   (30387):     x24 000000617097e968  x25 <private info omitted>0  x26 <private info omitted>0  x27 <private info omitted>0
+10-27 00:10:16.283 F/DEBUG   (30387):     x28 <private info omitted>0  x29 0000007ff32ff470
+10-27 00:10:16.283 F/DEBUG   (30387):     lr  00000061709589c0  sp  0000007ff32fd460  pc  00000072edf8e8f8  pst <private info omitted>0
+10-27 00:10:16.283 F/DEBUG   (30387): backtrace:
+10-27 00:10:16.284 F/DEBUG   (30387):       #00 pc 00000000000d98f8  /apex/com.android.runtime/lib64/bionic/libc.so (klogctl+8) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+10-27 00:10:16.284 F/DEBUG   (30387):       #01 pc 00000000000519bc  /system/bin/toybox (dmesg_main+440) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-27 00:10:16.284 F/DEBUG   (30387):       #02 pc <private info omitted>0  /system/bin/toybox (toy_exec_which+80) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-27 00:10:16.284 F/DEBUG   (30387):       #03 pc 0000000000033cb4  /system/bin/toybox (toybox_main+144) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-27 00:10:16.284 F/DEBUG   (30387):       #04 pc <private info omitted>8  /system/bin/toybox (main+112) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-27 00:10:16.284 F/DEBUG   (30387):       #05 pc <private info omitted>8  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+96) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+10-27 07:19:49.331 F/libc    (21228): Fatal signal 31 (SIGSYS), code 1 (SYS_SECCOMP) in tid 21228 (dmesg), pid 21228 (dmesg)
+10-27 07:19:49.411 F/DEBUG   (21232): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-27 07:19:49.411 F/DEBUG   (21232): Build fingerprint: 'samsung/a03sutfn/a03su:12/SP1A.210812.016/S134DLUDU3BVH3:user/release-keys'
+10-27 07:19:49.411 F/DEBUG   (21232): Revision: '0'
+10-27 07:19:49.411 F/DEBUG   (21232): ABI: 'arm64'
+10-27 07:19:49.411 F/DEBUG   (21232): Processor: '2'
+10-27 07:19:49.411 F/DEBUG   (21232): Timestamp: 2022-10-27 07:19:49.387635488-0400
+10-27 07:19:49.411 F/DEBUG   (21232): Process uptime: 1s
+10-27 07:19:49.411 F/DEBUG   (21232): Cmdline: dmesg
+10-27 07:19:49.411 F/DEBUG   (21232): pid: 21228, tid: 21228, name: dmesg  >>> dmesg <<<
+10-27 07:19:49.411 F/DEBUG   (21232): uid: 10253
+10-27 07:19:49.411 F/DEBUG   (21232): signal 31 (SIGSYS), code 1 (SYS_SECCOMP), fault addr --------
+10-27 07:19:49.411 F/DEBUG   (21232): Cause: seccomp prevented call to disallowed arm64 system call 116
+10-27 07:19:49.412 F/DEBUG   (21232):     x0  <private info omitted>a  x1  <private info omitted>0  x2  <private info omitted>0  x3  <private info omitted>0
+10-27 07:19:49.412 F/DEBUG   (21232):     x4  0000007ffe57d451  x5  <private info omitted>4  x6  <private info omitted>0  x7  ff372c455354fefe
+10-27 07:19:49.412 F/DEBUG   (21232):     x8  <private info omitted>4  x9  5bdf49dca1338db7  x10 0000007ffe57b3b0  x11 0000007ffe57b380
+10-27 07:19:49.412 F/DEBUG   (21232):     x12 ffffff80ffffffd0  x13 b4000078ffa0b010  x14 <private info omitted>0  x15 <private info omitted>0
+10-27 07:19:49.412 F/DEBUG   (21232):     x16 0000005719e5ed20  x17 0000007902b2e8f0  x18 0000007906fac000  x19 <private info omitted>0
+10-27 07:19:49.412 F/DEBUG   (21232):     x20 <private info omitted>0  x21 0000007ffe57b450  x22 <private info omitted>0  x23 0000005719e64990
+10-27 07:19:49.412 F/DEBUG   (21232):     x24 0000005719e62968  x25 <private info omitted>0  x26 <private info omitted>0  x27 <private info omitted>0
+10-27 07:19:49.412 F/DEBUG   (21232):     x28 <private info omitted>0  x29 0000007ffe57d460
+10-27 07:19:49.412 F/DEBUG   (21232):     lr  0000005719e3c9c0  sp  0000007ffe57b450  pc  0000007902b2e8f8  pst <private info omitted>0
+10-27 07:19:49.412 F/DEBUG   (21232): backtrace:
+10-27 07:19:49.412 F/DEBUG   (21232):       #00 pc 00000000000d98f8  /apex/com.android.runtime/lib64/bionic/libc.so (klogctl+8) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+10-27 07:19:49.412 F/DEBUG   (21232):       #01 pc 00000000000519bc  /system/bin/toybox (dmesg_main+440) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-27 07:19:49.412 F/DEBUG   (21232):       #02 pc <private info omitted>0  /system/bin/toybox (toy_exec_which+80) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-27 07:19:49.412 F/DEBUG   (21232):       #03 pc 0000000000033cb4  /system/bin/toybox (toybox_main+144) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-27 07:19:49.412 F/DEBUG   (21232):       #04 pc <private info omitted>8  /system/bin/toybox (main+112) (BuildId: f1d19a9e61c6a256c658a23c3c7314a3)
+10-27 07:19:49.412 F/DEBUG   (21232):       #05 pc <private info omitted>8  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+96) (BuildId: 8f222942dc272b9a57d3ee413b6d3106)
+--------- beginning of system
+10-27 18:18:25.467 D/ActivityThread(23635): handleBindApplication()++ app=com.tortel.syslog
+10-27 18:18:25.498 D/LoadedApk(23635): LoadedApk::makeApplication() appContext.mOpPackageName=com.tortel.syslog appContext.mBasePackageName=com.tortel.syslog
+10-27 18:18:25.511 D/ActivityThread(23635): handleBindApplication() --
+10-27 21:47:21.927 D/ActivityThread(16646): handleBindApplication()++ app=com.tortel.syslog
+10-27 21:47:22.063 D/LoadedApk(16646): LoadedApk::makeApplication() appContext.mOpPackageName=com.tortel.syslog appContext.mBasePackageName=com.tortel.syslog
+10-27 21:47:22.089 D/ActivityThread(16646): handleBindApplication() --
+--------- beginning of main
+10-27 22:25:50.002 I/libc    ( 3159): SetHeapTaggingLevel: tag level set to 0
+10-27 22:25:50.023 E/m.tortel.syslo( 3159): Not starting debugger since process cannot load the jdwp agent.
+10-27 22:25:50.025 E/USNET   ( 3159): USNET: appName: com.tortel.syslog
+10-27 22:25:50.028 D/ProcessState( 3159): Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-27 22:25:50.029 D/ActivityThread( 3159): setConscryptValidator
+10-27 22:25:50.030 D/ActivityThread( 3159): setConscryptValidator - put
+10-27 22:25:50.048 D/ActivityThread( 3159): handleBindApplication()++ app=com.tortel.syslog
+10-27 22:25:50.049 D/CompatibilityChangeReporter( 3159): Compat change id reported: 171979766; UID 10253; state: DISABLED
+10-27 22:25:50.056 D/ApplicationLoaders( 3159): Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-27 22:25:50.074 V/GraphicsEnvironment( 3159): ANGLE Developer option for 'com.tortel.syslog' set to: 'default'
+10-27 22:25:50.074 V/GraphicsEnvironment( 3159): Neither updatable production driver nor prerelease driver is supported.
+10-27 22:25:50.077 D/LoadedApk( 3159): LoadedApk::makeApplication() appContext.mOpPackageName=com.tortel.syslog appContext.mBasePackageName=com.tortel.syslog
+10-27 22:25:50.077 D/NetworkSecurityConfig( 3159): No Network Security Config specified, using platform default
+10-27 22:25:50.082 D/NetworkSecurityConfig( 3159): No Network Security Config specified, using platform default
+10-27 22:25:50.091 D/ActivityThread( 3159): handleBindApplication() --
+10-27 22:25:50.202 D/OpenGLRenderer( 3159): RenderThread::requireGlContext()
+10-27 22:25:50.205 D/libMEOW ( 3159): meow new tls: 0x72bace6740
+10-27 22:25:50.213 D/libMEOW ( 3159): meow reload base cfg path: na
+10-27 22:25:50.213 D/libMEOW ( 3159): meow reload overlay cfg path: na
+10-27 22:25:50.251 E/QT      ( 3159): [QT]file does not exist
+10-27 22:25:50.255 D/libMEOW ( 3159): applied 2 plugins for [com.tortel.syslog]:
+10-27 22:25:50.255 D/libMEOW ( 3159):   plugin 1: [libMEOW_gift.so]:
+10-27 22:25:50.255 D/libMEOW ( 3159):   plugin 2: [libMEOW_semaphore]:
+10-27 22:25:50.299 D/hw-ProcessState( 3159): Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-27 22:25:50.306 D/libEGL  ( 3159): Enabling MSAA 4x
+10-27 22:25:50.307 D/libEGL  ( 3159): Enabling MSAA 4x
+10-27 22:25:50.372 I/DecorView( 3159): [INFO] isPopOver=false, config=true
+10-27 22:25:50.372 I/DecorView( 3159): updateCaptionType >> DecorView@51d2ebf[], isFloating=false, isApplication=true, hasWindowControllerCallback=true, hasWindowDecorCaption=false
+10-27 22:25:50.372 D/DecorView( 3159): setCaptionType = 0, this = DecorView@51d2ebf[]
+10-27 22:25:50.380 D/OpenGLRenderer( 3159): RenderThread::setGrContext()
+10-27 22:25:50.385 I/DecorView( 3159): getCurrentDensityDpi: from real metrics. densityDpi=259 msg=resources_loaded
+10-27 22:25:50.449 D/SysLog  ( 3159): Fragment null, replacing
+10-27 22:25:50.454 D/SysLog  ( 3159): Loading settings
+10-27 22:25:50.473 D/CompatibilityChangeReporter( 3159): Compat change id reported: 171228096; UID 10253; state: ENABLED
+10-27 22:25:50.476 D/ScrollView( 3159): initGoToTop
+10-27 22:25:50.634 D/SysLog  ( 3159): Checking for root
+10-27 22:25:50.634 D/SysLog  ( 3159): Setting the checkboxes
+10-27 22:25:50.635 D/SysLog  ( 3159): Checking if last_kmsg and radio are available
+10-27 22:25:50.668 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): setView = com.android.internal.policy.DecorView@51d2ebf TM=true
+10-27 22:25:50.756 I/BufferQueueConsumer( 3159): [](id:c5700000000,api:0,p:-1,c:3159) connect: controlledByApp=false
+10-27 22:25:50.762 I/BLASTBufferQueue( 3159): [ViewRootImpl@93c50f9[FragmentMainActivity]#0] constructor()
+10-27 22:25:50.766 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): Relayout returned: old=(0,0,720,1600) new=(0,0,720,1600) req=(720,1600)0 dur=13 res=0x7 s={true 492639145984} ch=true fn=-1
+10-27 22:25:50.773 I/BufferQueueProducer( 3159): [ViewRootImpl@93c50f9[FragmentMainActivity]#0(BLAST Consumer)0](id:c5700000000,api:1,p:3159,c:3159) connect: api=1 producerControlledByApp=true
+10-27 22:25:50.775 D/OpenGLRenderer( 3159): eglCreateWindowSurface
+10-27 22:25:50.793 D/ScrollView( 3159):  onsize change changed 
+10-27 22:25:50.795 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919 
+10-27 22:25:50.798 D/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+10-27 22:25:50.799 D/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): Creating frameCompleteCallback
+10-27 22:25:50.801 E/ion     ( 3159): ioctl c0044901 failed with code -1: Invalid argument
+10-27 22:25:50.824 D/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+10-27 22:25:50.906 D/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+10-27 22:25:50.912 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+10-27 22:25:50.912 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): [DP] rdf()
+10-27 22:25:50.912 D/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): reportDrawFinished (fn: -1) 
+10-27 22:25:50.913 D/SysLog  ( 3159): Root not available
+10-27 22:25:50.947 D/SysLog  ( 3159): Enabling log button: true
+10-27 22:25:50.993 D/ScrollView( 3159):  onsize change changed 
+10-27 22:25:51.023 D/InsetsSourceConsumer( 3159): ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.tortel.syslog/com.tortel.syslog.FragmentMainActivity
+10-27 22:25:51.025 D/InsetsSourceConsumer( 3159): ensureControlAlpha: for ITYPE_STATUS_BAR on com.tortel.syslog/com.tortel.syslog.FragmentMainActivity
+10-27 22:25:51.029 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): MSG_WINDOW_FOCUS_CHANGED 1 1
+10-27 22:25:51.039 D/InputMethodManager( 3159): startInputInner - Id : 0
+10-27 22:25:51.039 I/InputMethodManager( 3159): startInputInner - mService.startInputOrWindowGainedFocus
+10-27 22:25:51.094 D/InputMethodManager( 3159): startInputInner - Id : 0
+10-27 22:25:52.791 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): ViewPostIme pointer 0
+10-27 22:25:53.172 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): ViewPostIme pointer 1
+10-27 22:25:55.047 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): ViewPostIme pointer 0
+10-27 22:25:55.146 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): ViewPostIme pointer 1
+10-27 22:25:55.194 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): setView = android.widget.PopupWindow$PopupDecorView@6584a55 TM=true
+10-27 22:25:55.209 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): Resizing android.view.ViewRootImpl@cfbbc6a: frame=[368,762][704,1230] reportDraw=true forceLayout=false backDropFrame=Rect(0, 0 - 336, 468)
+10-27 22:25:55.212 I/BufferQueueConsumer( 3159): [](id:c5700000001,api:0,p:-1,c:3159) connect: controlledByApp=false
+10-27 22:25:55.213 I/BLASTBufferQueue( 3159): [ViewRootImpl@264785e[PopupWindow:8876d99]#1] constructor()
+10-27 22:25:55.218 D/InsetsSourceConsumer( 3159): ensureControlAlpha: for ITYPE_NAVIGATION_BAR on PopupWindow:8876d99
+10-27 22:25:55.220 D/InsetsSourceConsumer( 3159): ensureControlAlpha: for ITYPE_STATUS_BAR on PopupWindow:8876d99
+10-27 22:25:55.222 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): Relayout returned: old=(0,45,720,1522) new=(368,762,704,1230) req=(336,468)0 dur=10 res=0x7 s={true 490867748864} ch=true fn=-1
+10-27 22:25:55.223 I/BufferQueueProducer( 3159): [ViewRootImpl@264785e[PopupWindow:8876d99]#1(BLAST Consumer)1](id:c5700000001,api:1,p:3159,c:3159) connect: api=1 producerControlledByApp=true
+10-27 22:25:55.223 D/OpenGLRenderer( 3159): eglCreateWindowSurface
+10-27 22:25:55.236 D/AbsListView( 3159):  in onLayout changed 
+10-27 22:25:55.243 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): [DP] dp(1) 0 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919 
+10-27 22:25:55.251 D/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+10-27 22:25:55.251 D/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): Creating frameCompleteCallback
+10-27 22:25:55.256 D/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+10-27 22:25:55.272 D/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+10-27 22:25:55.274 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): [DP] pdf(0) 0 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+10-27 22:25:55.274 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): [DP] rdf()
+10-27 22:25:55.274 D/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): reportDrawFinished (fn: -1) 
+10-27 22:25:55.299 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): handleResized, msg = 5 frames=ClientWindowFrames{frame=[368,762][704,1230] display=[-10000,-10000][10000,10000] backdrop=[0,0][336,468]} forceNextWindowRelayout=false displayId=0 frameChanged=false backdropFrameChanged=true configChanged=false displayChanged=false mNextDrawUseBlastSync=false mergedConfiguration={mGlobalConfig={0.8 310mcc240mnc [en_US] ldltr sw444dp w444dp h912dp 259dpi nrml long port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1600) mAppBounds=Rect(0, 45 - 720, 1522) mMaxBounds=Rect(0, 0 - 720, 1600) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0 mPopOver=off mFreeformTaskPinningState=unpinned} s.691 fontWeightAdjustment=0 ff=0 bf=0 bts=0 enb/d themeSeq=0} mOverrideConfig={0.8 310mcc240mnc [en_US] ldltr sw444dp w444dp h912dp 259dpi nrml long port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1600) mAppBounds=Rect(0, 45 - 720, 1522) mMaxBounds=Rect(0, 0 - 720, 1600) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0 mPopOver=off mFreeformTaskPinningState=unpinned} s.1 fontWeightAdjustment=0 ff=0 bf=0 bts=0 enb/d themeSeq=0}}
+10-27 22:25:55.300 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): [DP] dp(1) 0 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.handleResized:2230 android.view.ViewRootImpl.access$1200:302 
+10-27 22:25:55.303 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): MSG_WINDOW_FOCUS_CHANGED 0 1
+10-27 22:25:55.311 D/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+10-27 22:25:55.311 D/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): Creating frameCompleteCallback
+10-27 22:25:55.315 D/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): Received frameDrawingCallback frameNum=3. Creating transactionCompleteCallback=false
+10-27 22:25:55.322 D/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): Received frameCompleteCallback  lastAcquiredFrameNum=3 lastAttemptedDrawFrameNum=3
+10-27 22:25:55.333 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): [DP] pdf(0) 0 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+10-27 22:25:55.333 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): [DP] rdf()
+10-27 22:25:55.333 D/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): reportDrawFinished (fn: -1) 
+10-27 22:25:55.334 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): MSG_WINDOW_FOCUS_CHANGED 1 1
+10-27 22:25:56.123 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): ViewPostIme pointer 0
+10-27 22:25:56.257 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): ViewPostIme pointer 1
+10-27 22:25:56.258 D/AbsListView( 3159): onTouchUp() mTouchMode : 2
+10-27 22:25:56.287 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): Relayout returned: old=(368,762,704,1230) new=(368,762,704,1230) req=(336,468)0 dur=11 res=0x1 s={true 490867748864} ch=false fn=18
+10-27 22:25:56.317 D/InsetsSourceConsumer( 3159): ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.tortel.syslog/com.tortel.syslog.FragmentMainActivity
+10-27 22:25:56.318 D/InsetsSourceConsumer( 3159): ensureControlAlpha: for ITYPE_STATUS_BAR on com.tortel.syslog/com.tortel.syslog.FragmentMainActivity
+10-27 22:25:56.341 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): MSG_WINDOW_FOCUS_CHANGED 0 1
+10-27 22:25:56.342 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): MSG_WINDOW_FOCUS_CHANGED 1 1
+10-27 22:25:56.352 D/InputMethodManager( 3159): startInputInner - Id : 0
+10-27 22:25:56.352 I/InputMethodManager( 3159): startInputInner - mService.startInputOrWindowGainedFocus
+10-27 22:25:56.622 D/OpenGLRenderer( 3159): setSurface called with nullptr
+10-27 22:25:56.622 D/OpenGLRenderer( 3159): setSurface() destroyed EGLSurface
+10-27 22:25:56.622 D/OpenGLRenderer( 3159): destroyEglSurface
+10-27 22:25:56.623 I/BufferQueueProducer( 3159): [ViewRootImpl@264785e[PopupWindow:8876d99]#1(BLAST Consumer)1](id:c5700000001,api:1,p:3159,c:3159) disconnect: api 1
+10-27 22:25:56.624 I/ViewRootImpl@264785e[PopupWindow:8876d99]( 3159): dispatchDetachedFromWindow
+10-27 22:25:56.633 D/InputTransport( 3159): Input channel destroyed: '4a98951', fd=101
+10-27 22:25:56.637 I/BLASTBufferQueue( 3159): [ViewRootImpl@264785e[PopupWindow:8876d99]#1] destructor()
+10-27 22:25:56.637 I/BufferQueueConsumer( 3159): [ViewRootImpl@264785e[PopupWindow:8876d99]#1(BLAST Consumer)1](id:c5700000001,api:0,p:-1,c:3159) disconnect
+10-27 22:25:57.201 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): ViewPostIme pointer 0
+10-27 22:25:57.384 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): ViewPostIme pointer 1
+10-27 22:25:57.427 V/SysLog  ( 3159): Path: /data/user/0/com.tortel.syslog/cache/logs/2022-10-27_22.25/
+10-27 22:25:57.437 V/SysLog  ( 3159): Done grabbing logs
+10-27 22:25:57.478 I/Dialog  ( 3159): mIsDeviceDefault = false, mIsSamsungBasicInteraction = false, isMetaDataInActivity = false
+10-27 22:25:57.484 I/DecorView( 3159): [INFO] isPopOver=false, config=false
+10-27 22:25:57.484 I/DecorView( 3159): updateCaptionType >> DecorView@d6bae03[], isFloating=true, isApplication=true, hasWindowControllerCallback=false, hasWindowDecorCaption=false
+10-27 22:25:57.484 D/DecorView( 3159): setCaptionType = 0, this = DecorView@d6bae03[]
+10-27 22:25:57.513 D/ScrollView( 3159): initGoToTop
+10-27 22:25:57.552 I/ViewRootImpl@8768d29[FragmentMainActivity]( 3159): setView = com.android.internal.policy.DecorView@d6bae03 TM=true
+10-27 22:25:57.573 I/BufferQueueConsumer( 3159): [](id:c5700000002,api:0,p:-1,c:3159) connect: controlledByApp=false
+10-27 22:25:57.574 I/BLASTBufferQueue( 3159): [ViewRootImpl@8768d29[FragmentMainActivity]#2] constructor()
+10-27 22:25:57.580 D/InsetsSourceConsumer( 3159): ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.tortel.syslog/com.tortel.syslog.FragmentMainActivity
+10-27 22:25:57.581 D/InsetsSourceConsumer( 3159): ensureControlAlpha: for ITYPE_STATUS_BAR on com.tortel.syslog/com.tortel.syslog.FragmentMainActivity
+10-27 22:25:57.581 I/ViewRootImpl@8768d29[FragmentMainActivity]( 3159): Relayout returned: old=(0,45,720,1522) new=(19,680,701,886) req=(682,206)0 dur=13 res=0x7 s={true 490867748864} ch=true fn=-1
+10-27 22:25:57.582 I/BufferQueueProducer( 3159): [ViewRootImpl@8768d29[FragmentMainActivity]#2(BLAST Consumer)2](id:c5700000002,api:1,p:3159,c:3159) connect: api=1 producerControlledByApp=true
+10-27 22:25:57.582 D/OpenGLRenderer( 3159): eglCreateWindowSurface
+10-27 22:25:57.587 I/ViewRootImpl@8768d29[FragmentMainActivity]( 3159): [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919 
+10-27 22:25:57.587 D/ViewRootImpl@8768d29[FragmentMainActivity]( 3159): Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+10-27 22:25:57.587 D/ViewRootImpl@8768d29[FragmentMainActivity]( 3159): Creating frameCompleteCallback
+10-27 22:25:57.601 D/ViewRootImpl@8768d29[FragmentMainActivity]( 3159): Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+10-27 22:25:57.608 D/ViewRootImpl@8768d29[FragmentMainActivity]( 3159): Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+10-27 22:25:57.627 I/ViewRootImpl@8768d29[FragmentMainActivity]( 3159): [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+10-27 22:25:57.627 I/ViewRootImpl@8768d29[FragmentMainActivity]( 3159): [DP] rdf()
+10-27 22:25:57.627 D/ViewRootImpl@8768d29[FragmentMainActivity]( 3159): reportDrawFinished (fn: -1) 
+10-27 22:25:57.658 I/ViewRootImpl@93c50f9[FragmentMainActivity]( 3159): MSG_WINDOW_FOCUS_CHANGED 0 1
+10-27 22:25:57.675 I/ViewRootImpl@8768d29[FragmentMainActivity]( 3159): MSG_WINDOW_FOCUS_CHANGED 1 1
